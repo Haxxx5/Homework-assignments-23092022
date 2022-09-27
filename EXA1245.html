@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haggai Kovacs-EXA1,2,4,5-230922</title>
+</head>
+<body>
+    <!--EX1-->
+    <!--Input 2 values. Display "Growing..." IFF 2nd>1st-->
+    <!--EX2-->
+    <!--Input 2 values. Display the larger value-->
+    <!--EX4-->
+    <!--Input 2 values. Display if the 1st%2nd==0 and if 2nd%1st==0-->
+    <!--EX5-->
+    <!--Input 2 values. Display the larger of the two and than the smaller one. in the case of an equality display them both-->
+<script>
+    //Inputs. All Ex use the same 2 inputs
+        x= parseInt(prompt("input the 1st number: "))
+        y= parseInt(prompt("input the 2st number: "))
+        //Ex1&Ex2
+        if (y>x){
+            document.write(`<h1>Growing...</h1><p>The larger number is:${y}</p>`)}
+        else{document.write(`<p>The larger number is: ${x}</p>`)}
+        //Ex4
+        if(x%y==0){
+            document.write(`<p>Your 2st number divides your 1nd number</p>`)}
+        else{document.write(`<p></p>`)}     
+        if(y%x==0){
+            document.write(`<p>Your 1st number divides your 2st number</p>`)}
+        else{document.write(`<p></p>`)}
+        //Ex5
+        if (y>x){
+            document.write(`<p>The values in growing order :${y},${x}</p>`)}
+       else if (x>y) {
+            document.write(`<p>The values in growing order :${x},${y}</p>`)} 
+        else {
+            document.write(`<p>Your values are equal: ${x},${y}</p>`)}
+        </script>
+</body>
+</html>

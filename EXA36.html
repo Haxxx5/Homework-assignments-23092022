@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Haggai Kovacs-EXA3,6-230922</title>
+</head>
+<body>
+    <!--EX3-->
+    <!--Input a single integer. Display "Even" if it is even or "Odd" if it is odd-->
+    <!--EX6-->
+    <!--Input a single integer. Add 10%. if the result is greater than 6000, add 5% to the original instead. print the result-->
+    <script>
+        //Input
+        x= parseInt(prompt("input a single number: "))
+        //Ex3
+        if (x%2==0){
+            document.write(`<p>Even</p>`)}
+        else{document.write(`<p>Odd</p>`)}
+        //Ex6
+        if (x+(x*0.1)>6000){
+            document.write(`Your new salery is ${x+(x*0.05)}. Enjoy your 5% bonus!`)
+            }
+        else{
+            document.write(`Your new salery is ${x+(x*0.1)}. Enjoy your 10% bonus!`)}
+</script>
+</body>
+</html>

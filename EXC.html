@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haggai Kovacs-EXC1-23092</title>
+</head>
+<body>
+    <!--EX1-->
+    <!--
+        Input a numerical grade.
+        translate that grade to a letter grade according to the following criteria:
+        * <55 "בלתי מספיק"
+        * 55<x<64 "מספיק"
+        * 65<x<74 "כמעט טוב"
+        * 75<x<84 "טוב"
+        * 85<x<94 "טוב מאד"
+        * 95< "מצוין"
+    -->
+    <script>
+    // Input
+    let x= parseInt(prompt("Input the value to be avalueted: "))
+    var grade
+      
+    //EX1
+
+    document.write(`<p>You inputed the grade ${x}.  `)
+
+        if (x<55){grade="בלתי מספיק"}
+        else if(55<=x && x<=64){grade="מספיק"}
+        else if(65<=x && x<=74){grade="כמעט טוב"}
+        else if(75<=x && x<=84){grade="טוב"}
+        else if(85<=x && x<=94){grade="טוב מאד"}
+        else{grade="מצוין"}
+  
+    document.write(`.The student recived is: ${grade}</p>`)
+    </script>
+</body>
+</html>

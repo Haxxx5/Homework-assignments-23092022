@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haggai Kovacs-EXB2,3-23092</title>
+</head>
+<body>
+    <!--EX2-->
+    <!--Input 3 values. IFF  3rd>2nd>1st write "Growing..."-->
+    <!--EX3-->
+    <!--Input 3 values. output the largest value-->
+  <script>
+    //input
+    x= parseInt(prompt("Input your 1st value: "))
+    y= parseInt(prompt("Input your 2nd value: ")) 
+    z= parseInt(prompt("Input your 3rd value: "))
+    //EX1
+    if (z>y && y>x){
+            document.write(`<h1>Growing...</h1><p>The larger number is:${z}</p>`)}
+    else if(y>x){document.write(`<p>The larger number is: ${y}</p>`)}
+        else {document.write(`<p>The larger number is: ${x}</p>`)}
+  </script>
+</body>
+</html>

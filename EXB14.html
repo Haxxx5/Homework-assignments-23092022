@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haggai Kovacs-EXB1,4-23092</title>
+</head>
+<body>
+    <!--EX1-->
+    <!--Write the diagram in EXB.png as a JS script-->
+    <!--EX4-->
+    <!--Input a number between 1 and 9999. Write how many digits does the number have-->
+  <script>
+    //input
+    x= parseInt(prompt("input the value to be avalueted: "))
+    //EX1
+    if(x<0){
+        document.write(`<p>Negative</p>`)}
+    else if(x==0){document.write(`<p>Zero</p>`)}
+    else{  document.write(`<p>Positive</p>`)}
+
+    //Ex4
+    document.write(`<p>You inputed ${x}, it is a `)
+    if (999<x){document.write(`four digit number</p>`)}
+    else if(99<x){document.write(`three digit number</p>`)}
+    else if(9<x){document.write(`two digit number</p>`)}
+    else{document.write(`one digit number</p>`)}
+   
+  </script>
+</body>
+</html>
